@@ -1,14 +1,18 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #adfff1;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     min-height: 100vh;
 }
 
+/* Navbar */
 nav {
     width: 100%;
     background-color: #adfff1;
@@ -56,6 +60,7 @@ nav h2.rgb-text {
 
 /* Obsah pod navbarom */
 .container {
+    flex: 1;
     padding-top: 100px;
     text-align: center;
 }
@@ -82,4 +87,18 @@ h1 {
 .download-button:hover {
     background-color: #007c66;
     transform: scale(1.03);
+}
+
+.tmavofialova {
+    color: rgb(180, 0, 172);
+}
+
+/* Footer */
+footer {
+    background-color: #adfff1;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    width: 98,50%;
 }
